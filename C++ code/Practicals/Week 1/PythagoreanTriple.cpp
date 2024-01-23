@@ -2,7 +2,7 @@
 
 int main(){
 
-    //pythagorean triple = (a*a+b*b = c*c)
+    //this function is to find if a set of three numbers are a pythagorean triple = (a*a+b*b = c*c)
     int num1, num2, num3;
 
     printf("please input your first number: ");
