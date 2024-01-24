@@ -2,7 +2,7 @@
 
 //function to work out whether a number is triangular or not - 1,3,6,10,15 so on
 
-void isTriangular(int number){
+int isTriangular(int number){
     int triangularNums[number*2] = {};
     for (int x = 1; x <= number; x++){
         int formulaOutput = ((x * (x + 1)) / 2);
