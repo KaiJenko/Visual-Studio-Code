@@ -37,6 +37,6 @@ int main(){
         }
     }
 
-    printf("Even nums: %d and Odd nums: %d", evenNumsTotal, oddNumsTotal);
+    printf("Even nums sum: %d and Odd nums sum: %d", evenNumsTotal, oddNumsTotal);
 
 }
