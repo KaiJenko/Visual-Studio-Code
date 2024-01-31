@@ -4,7 +4,7 @@ int calculateSum(int num1, int num2){
     
     int sum = num1 + num2;
     printf("Your sum is: %d", sum);
-    return 1;
+    return sum;
 }
 
 
