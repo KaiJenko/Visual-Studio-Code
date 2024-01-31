@@ -21,5 +21,4 @@ int main(){
     scanf("%d", &num);
     const char* isPrime = checkPrimality(num); 
     printf("Your number is a prime: %s", isPrime);
-
 }
