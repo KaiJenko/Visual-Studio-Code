@@ -30,7 +30,7 @@ int main(){
     printf("Please input the size of your array: ");
     scanf("%d", &size);
     
-    int numbers[size] ;
+    int numbers[size];
 
     printf("Please input a array of numbers, type done once inputted: ");
     for (int x = 0; x < size; x++){
