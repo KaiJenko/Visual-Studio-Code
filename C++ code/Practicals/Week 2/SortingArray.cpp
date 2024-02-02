@@ -2,10 +2,25 @@
 
 //This program takes an array and sorts it in ascending order
 
-int sort(int sortArray[], int length){
+void swap(int array[], int x, int y){
+    int temp = array[x];
+    array[x] = array[y];
+    array[y] = temp;
 
-    for (int x = 0; x < length; x++)
+}
 
+void sort(int sortArray[], int length){
+
+bool swapped;
+
+    for (int x = 0; x < length -1; x++){
+        for (int y = 0; y < length - x - 1; y++){
+            if (sortArray[y] > sortArray[y + 1]){
+                swap(sortArray, y, y+1);
+                swapped = true;
+            }
+        }
+    }
 }
 
 int main(){
@@ -24,10 +39,9 @@ int main(){
 
     int length = sizeof(numbers) / sizeof(numbers[0]);
 
+    sort(numbers, length);
+
     for (int x = 0; x < length; x++){
         printf("%d ", numbers[x]);
     }
-
-    
-
 }
