@@ -4,6 +4,8 @@
 
 void TwoSum(int nums[], int target, int size){
 
+    int found = 0;
+
     for (int x = 0; x < size; x++){
         for (int y = 0; y < size; y++){
             if (x != y){
@@ -12,9 +14,13 @@ void TwoSum(int nums[], int target, int size){
                 if (og + newNum == target)
                 {
                     printf("%d and %d\n", nums[x], nums[y]);
+                    found = 1;
                     break;
                 }
             }
+        }
+        if (found == 1) {
+            break;
         }
     }
     
